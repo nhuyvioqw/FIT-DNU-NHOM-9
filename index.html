@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>StayEasy</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">🏨 StayEasy</div>
+
+      <div class="menu">
+        <!-- KHÁCH SẠN -->
+        <div class="menu">
+          <div class="menu-item">
+            Khách sạn
+            <div class="dropdown">
+              <p>Hà Nội</p>
+              <p>Đà Lạt</p>
+              <p>Đà Nẵng</p>
+              <p>Phú Quốc</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            Thông tin
+            <div class="dropdown">
+              <p>Thông tin</p>
+              <p>Hình ảnh</p>
+              <p>Tìm kiếm</p>
+              <p>Đặt phòng</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- USER -->
+        <div class="nav-right">
+          <div id="userBox"></div>
+
+          <button id="loginBtn" class="btn-outline" onclick="openAuth()">
+            Đăng nhập
+          </button>
+
+          <button
+            id="logoutBtn"
+            class="btn-main"
+            onclick="logout()"
+            style="display: none"
+          >
+            Đăng xuất
+          </button>
+        </div>
+      </div>
+      <!-- NAVBAR -->
+      <div class="menu-item">
+        Quản lý
+        <div class="dropdown">
+          <p onclick="goManager()">Quản lý phòng</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DROPDOWN KHÁCH SẠN -->
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>DU LỊCH GIÁ TỐT CÙNG STAYEASY</h1>
+      <!-- FEATURED ROOMS -->
+      <div class="featured">
+        <div class="featured-header">
+          <h2>🏆 Phòng nổi bật</h2>
+          <span>Xem tất cả →</span>
+        </div>
+
+        <div id="featuredRooms" class="featured-list"></div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="search-box">
+        <input placeholder="Bạn muốn đặt phòng nào?" />
+        <input type="date" id="checkin" />
+        <input type="date" id="checkout" />
+        <input id="guests" placeholder="Số khách" />
+        <button onclick="search()">TÌM</button>
+      </div>
+    </div>
+
+    <!-- ROOMS -->
+    <h2 class="section-title">Phòng nổi bật</h2>
+    <div id="roomList"></div>
+
+    <!-- MODAL -->
+    <div id="modal">
+      <div id="modalContent"></div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+  <!-- AUTH MODAL -->
+  <div id="authModal" class="auth-modal" onclick="outsideClick(event)">
+    <div class="auth-box">
+      <span class="close-btn" onclick="closeAuth()">✖</span>
+
+      <h2 id="authTitle">Đăng nhập</h2>
+
+      <input id="username" placeholder="Tài khoản" />
+      <input id="password" type="password" placeholder="Mật khẩu" />
+
+      <button onclick="submitAuth()">Xác nhận</button>
+
+      <p onclick="toggleAuth()" id="switchText">Chưa có tài khoản? Đăng ký</p>
+    </div>
+  </div>
+  <button onclick="scrollLeft()">⬅</button>
+  <button onclick="scrollRight()">➡</button>
+  <div id="info" class="section hidden">
+    <h2>Thông tin</h2>
+    <p>Website đặt phòng StayEasy</p>
+  </div>
+
+  <div id="images" class="section hidden">
+    <h2>Hình ảnh</h2>
+    <p>Gallery ảnh khách sạn</p>
+  </div>
+
+  <div id="search" class="section hidden">
+    <h2>Tìm kiếm</h2>
+    <p>Chức năng tìm phòng</p>
+  </div>
+
+  <div id="booking" class="section hidden">
+    <h2>Đặt phòng</h2>
+    <p>Form booking</p>
+  </div>
+</html>

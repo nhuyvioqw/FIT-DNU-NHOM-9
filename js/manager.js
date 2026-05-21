@@ -1,14 +1,13 @@
 let roomsData = JSON.parse(localStorage.getItem("rooms")) || rooms;
 
-// RENDER
 function render(){
   let html = "";
 
   roomsData.forEach((r,i) => {
     html += `
       <div>
-        <b>${r.name}</b> - ${r.price}k - ${r.location}
-        <button onclick="del(${i})">❌</button>
+        ${r.name} - ${r.price}k - ${r.location}
+        <button onclick="del(${i})">Xoá</button>
       </div>
     `;
   });
@@ -16,16 +15,10 @@ function render(){
   document.getElementById("list").innerHTML = html;
 }
 
-// ADD
 function addRoom(){
   let name = document.getElementById("name").value;
   let price = document.getElementById("price").value;
   let location = document.getElementById("location").value;
-
-  if(!name || !price || !location){
-    alert("Nhập đầy đủ!");
-    return;
-  }
 
   let newRoom = {
     id: Date.now(),
@@ -41,7 +34,6 @@ function addRoom(){
   render();
 }
 
-// DELETE
 function del(i){
   roomsData.splice(i,1);
   localStorage.setItem("rooms", JSON.stringify(roomsData));

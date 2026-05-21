@@ -1,0 +1,21 @@
+{
+  "name": "fit-dnu-fe-nhom-9",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000L\u0000�\u001ep\u0000 \u00001\u00009\u0000-\u00000\u00008\u0000 \u0000-\u0000 \u0000N\u0000h\u0000�\u0000m\u0000 \u00009\u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000#\u0000 \u0000N\u0000g\u0000u\u0000y\u0000�\u001en\u0000 \u0000V\u0000\u0003\u0001n\u0000 \u0000H\u0000u\u0000y\u0000 \u0000-\u0000 \u00001\u00009\u00007\u00001\u00000\u00002\u00000\u00002\u00001\u00008\u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000#\u0000 \u0000N\u0000g\u0000u\u0000y\u0000�\u001en\u0000 \u0000T\u0000h\u0000�\u001en\u0000g\u0000 \u0000L\u0000o\u0000n\u0000g\u0000 \u0000-\u0000 \u00001\u00009\u00007\u00001\u00000\u00002\u00000\u00002\u00008\u00003\u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000#\u0000 \u0000T\u0000r\u0000�\u001en\u0000 \u0000M\u0000i\u0000n\u0000h\u0000 \u0000Q\u0000u\u0000�\u0000n\u0000 \u0000-\u0000 \u00001\u00009\u00007\u00001\u00000\u00002\u00000\u00003\u00008\u00008\u0000\r\u0000 \u0000#\u0000 \u0000F\u0000I\u0000T\u0000-\u0000D\u0000N\u0000U\u0000-\u0000F\u0000E\u0000-\u0000N\u0000H\u0000O\u0000M\u0000-\u00009\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longthang447-ops/FIT-DNU-FE-NHOM-9.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/longthang447-ops/FIT-DNU-FE-NHOM-9/issues"
+  },
+  "homepage": "https://github.com/longthang447-ops/FIT-DNU-FE-NHOM-9#readme"
+}
